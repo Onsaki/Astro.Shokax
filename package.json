@@ -46,6 +46,7 @@
     "cn-font-split": "^7.4.3",
     "echarts": "^6.1.0",
     "es-toolkit": "^1.49.0",
+    "gray-matter": "^4.0.3",
     "i18next": "^26.3.4",
     "katex": "^0.17.0",
     "mouse-firework": "^0.2.0",
