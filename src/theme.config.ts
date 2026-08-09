@@ -2,7 +2,58 @@
 import { defineConfig } from "./toolkit/themeConfig";
 
 export default defineConfig({
-  // 首页配置
+
+// ====================== 首页banner ======================
+  siteName: "Onsaki",
+  brand: {
+    title: "Onsaki",
+    subtitle: "一颦、一笑、一回眸，一生记念。",
+    logo: "💤",
+  },
+
+
+// ====================== 侧边栏 Sidebar 配置 ======================
+  sidebar: {
+    author: "Onsaki",
+    description: "路边的茶楼人影错落，街上传来两三声吆喝。人前摇扇醒木拍桌，各位看官你细听分说",
+
+    social: {
+      github: {
+        url: "https://github.com/onsaki",
+        icon: "i-ri-github-fill",
+        color: "#191717",
+      },
+      bilibili: {
+        url: "https://space.bilibili.com/8861811",
+        icon: "i-ri-bilibili-fill",
+        color: "#fb7299",
+      },
+      music: {
+        url: "https://music.163.com/#/user/home?id=30311666",
+        icon: "i-ri-music-2-fill",
+        color: "#e60026",
+      },
+      weibo: {
+        url: "https://weibo.com/u/5034008607",
+        icon: "i-ri-weibo-fill",
+        color: "#ea716e",
+      },
+      email: {
+        url: "mailto:woshi@roubianqi.com",
+        icon: "i-ri-mail-fill",
+        color: "#55acd5",
+      },
+    },
+  },
+
+// ====================== 侧边栏小组件 ======================
+  widgets: {
+    randomPosts: true,
+    recentComments: true,
+  },
+
+
+// ====================== 首页配置 ======================
     home: {
     pageSize: 15, // 每页显示 5 篇文章
     selectedCategories: [
@@ -28,7 +79,7 @@ export default defineConfig({
     },
   },
 
-  // 右侧卡片布局
+// ====================== 右侧卡片布局 ======================
   layout: {
     mode: "three-column",
     rightSidebar: {
@@ -43,7 +94,7 @@ export default defineConfig({
 
 
 
-  // ====================== 导航栏 Nav 配置 ======================
+// ====================== 导航栏 Nav 配置 ======================
   nav: [
     // 首页
     {
@@ -98,69 +149,25 @@ export default defineConfig({
     // 留言板
     {
       text: "留言",
-      href: "/massage/",
+      href: "/message/",
       icon: "i-ri-wechat-line",
     },
   ],
 
-  // ====================== 侧边栏 Sidebar 配置 ======================
-  sidebar: {
-    siteName: "Onsaki",
-    brand: {
-      title: "Onsaki",
-      subtitle: "一颦、一笑、一回眸，一生记念。",
-      logo: "💤",
-    },
-    author: "Onsaki",
-    description: "路边的茶楼人影错落，街上传来两三声吆喝。人前摇扇醒木拍桌，各位看官你细听分说",
-    social: {
-      github: {
-        url: "https://github.com/onsaki",
-        icon: "i-ri-github-fill",
-        color: "#191717",
-      },
-      bilibili: {
-        url: "https://space.bilibili.com/8861811",
-        icon: "i-ri-bilibili-fill",
-        color: "#fb7299",
-      },
-      music: {
-        url: "https://music.163.com/#/user/home?id=30311666",
-        icon: "i-ri-music-2-fill",
-        color: "#e60026",
-      },
-      weibo: {
-        url: "https://weibo.com/u/5034008607",
-        icon: "i-ri-weibo-fill",
-        color: "#ea716e",
-      },
-      email: {
-        url: "mailto:woshi@roubianqi.com",
-        icon: "i-ri-mail-fill",
-        color: "#55acd5",
-      },
-    },
-  },
 
-  // 侧边栏小组件
-  widgets: {
-    randomPosts: true,
-    recentComments: true,
-  },
-
-  // 版权信息
+// ====================== 版权信息 ======================
   copyright: {
     License: "CC-BY-NC-SA-4.0", // 许可证类型
     show: true, // 是否显示版权声明
   },
 
-  // 页脚信息
+// ====================== 页脚信息 ======================
     footer: {
     since: 2020, // 博客起始年份
     count: true, // 显示统计信息
   },
 
-  // 页面标题切换
+// ====================== 页面标题切换 ======================
   visibilityTitle: {
     enable: true,
     leaveTitle: "👀 你先忙，我等你回来~",
@@ -168,9 +175,9 @@ export default defineConfig({
     restoreDelay: 3000,
   },
 
-  //友链
+//====================== 友链 ======================
   friends: {
-    tiele: "大佬们",
+    title: "大佬们",
     description: "管他是不是友，先把链接放上来.",
     links:[
       {
