@@ -60,11 +60,11 @@ export default defineConfig({
       // 突出显示两个分类
       { 
         name: "关于hexo",
-        cover: "src/assets/images/hexo-cover.jpg",
+        cover: "/images/hexo-cover.jpg",
       },
       {
         name: "学习笔记",
-        cover: "src/assets/images/bg-2.jpg",
+        cover: "/images/bg-1.jpg",
       },
     ],
   },
@@ -75,7 +75,7 @@ export default defineConfig({
     preload: true,      // 图片预加载（提升性能）
     fixedCover: {
       enable: true,     // 启用固定封面
-      url: "https://cdn.jsdelivr.net/gh/Onsaki/oimage/cover/sakuragirl.jpg",   // 使用预设图片
+      url: "/images/bg-2.jpg",   // 使用预设图片
     },
   },
 
