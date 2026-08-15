@@ -3,7 +3,7 @@ title: 在一台电脑上同时部署两个 Hexo 博客到 GitHub 的详细步�
 date: 2025-09-14 07:44:47
 tags:
   - hexo
-id: 'hexo-4'
+slug: hexo-4
 categories:
   - 关于hexo
 ---

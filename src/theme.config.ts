@@ -96,62 +96,124 @@ export default defineConfig({
 
 // ====================== 导航栏 Nav 配置 ======================
   nav: [
-    // 首页
+
+
+    // ====================== 首页 ======================
     {
       text: "首页",
       href: "/",
       icon: "i-ri-home-line",
     },
-    // 关于我
+
+
+    // ====================== 关于我 ======================
     {
       text: "关于",
       href: "/about/",
       icon: "i-ri-user-line",
     },
-    // 文章下拉菜单（归档/分类/标签）
+
+
+    // ================= 文章分类下拉菜单 =================
     {
       text: "文章",
-      href: "/posts/",
-      icon: "i-ri:article-line",
+      href: "/categories/",
+      icon: "i-ri-layout-grid-line",
       dropbox: {
         enable: true,
         items: [
           {
-            text: "归档",
-            href: "/archives/",
-            icon: "i-ri:archive-2-line",
+            text: "学习笔记",
+            href: "/categories/学习笔记/",
+            icon: "i-ri-sticky-note-2-line",
           },
           {
-            text: "分类",
-            href: "/categories/",
-            icon: "i-ri-layout-grid-line",
+            text: "闲散随笔",
+            href: "/categories/闲散随笔/",
+            icon: "i-ri-edit-line",
           },
           {
-            text: "标签",
-            href: "/tags/",
-            icon: "i-ri-price-tag-3-line",
+            text: "关于hexo",
+            href: "/categories/关于hexo/",
+            icon: "i-ri-blogger-line",
+          },
+          {
+            text: "Pornhub",
+            href: "/categories/Pornhub/",
+            icon: "i-ri-prohibited-line",
+          },
+          {
+            text: "观点输出",
+            href: "/categories/观点输出/",
+            icon: "i-ri-psychotherapy-line",
+          },
+          {
+            text: "观影",
+            href: "/categories/观影/",
+            icon: "i-ri-film-ai-line",
+          },
+          {
+            text: "关于设计",
+            href: "/categories/关于设计/",
+            icon: "i-ri-draw-line",
+          },
+          {
+            text: "生活日常",
+            href: "/categories/生活日常/",
+            icon: "i-ri-lifebuoy-fill",
           },
         ],
       },
     },
-    // 友链
+
+
+    // ====================== 归档 ======================
+    {
+      text: "归档",
+        href: "/archives/",
+        icon: "i-ri-archive-2-line",
+    },
+    
+
+    // ====================== 友链 ======================
+    {
+      text: "说说",
+      href: "/moments/",
+      icon: "i-ri-chat-quote-line",
+    },
+
+
+    // ====================== 友链 ======================
     {
       text: "友链",
       href: "/friends/",
       icon: "i-ri-heart-line",
     },
-    // 链接
+
+
+    // ====================== 链接 ======================
     {
       text: "链接",
       href: "/links/",
       icon: "i-ri-link-m",
     },
-    // 留言板
+
+
+    // ====================== 留言板 ======================
     {
       text: "留言",
       href: "/message/",
       icon: "i-ri-wechat-line",
     },
+
+
+    // ====================== 统计 ======================
+    {
+      text: "统计",
+      href: "/statistics/",
+      icon: "i-ri-bar-chart-box-line",
+    },
+
   ],
 
 
@@ -161,11 +223,13 @@ export default defineConfig({
     show: true, // 是否显示版权声明
   },
 
+
 // ====================== 页脚信息 ======================
     footer: {
     since: 2020, // 博客起始年份
     count: true, // 显示统计信息
   },
+
 
 // ====================== 页面标题切换 ======================
   visibilityTitle: {
@@ -174,6 +238,7 @@ export default defineConfig({
     returnTitle: "🎉 欢迎回来！",
     restoreDelay: 3000,
   },
+
 
 //====================== 友链 ======================
   friends: {
